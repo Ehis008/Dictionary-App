@@ -1,6 +1,6 @@
 async function findMeaning() {
     const wordInput = document.getElementById("wordInput").value
-    const apiUrl = `https:/api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`
     try {
         const response = await axios.get(apiUrl)
         const data = response.data
