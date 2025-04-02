@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg p-4 mt-5" style="max-width: 600px; min-height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1 class="text-success fw-bold mb-4">Dictionary</h1>
+            
+            <input type="text" id="wordInput" placeholder="Enter the words here" class="form-control shadow-lg mb-4" style="max-width: 80%;">
+
+            <button onclick="findMeaning()" class="btn btn-success mb-4">Search</button>
+            
+            <blockquote class="blockquote p-4 text-success fst-italic border-start border-3 border-success w-100">
+                <p id="displaywords" class="mt-4"></p>
+            </blockquote>
+        </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dictionary.js"></script>
+</body>
+</html>
